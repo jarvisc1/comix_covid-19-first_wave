@@ -31,14 +31,14 @@ admin/ - documents such as the survey protocol
 scripts with dm_ are for data management
 scripts with an_ are for analysis and creating figures
 
-dm_setup_contact_matrix - Create contact matrices based on the survey data and polymod and save in data/contact_matrices/
-dm_scale_contact_matrix - Scale the contact matrices to impute age and reduction in R. 
-dm_scale_boot_matrices - repeat what dm_scale_contact_matrix does but for bootstrapped matrices
-an_figure_one - Figure for paper
-an_figure_two - Figure of contact matrices for different locations
-an_descriptive_stats_tables -  descriptive stats that go into tables in the analysis.
-an_table_two - Table overview of the characterstics of participants and contacts
-an_eigenvalues - Create data and look at change in R based on the eigenvalue scalings. 
+* dm_setup_contact_matrix - Create contact matrices based on the survey data and polymod and save in data/contact_matrices/
+* dm_scale_contact_matrix - Scale the contact matrices to impute age and reduction in R. 
+* dm_scale_boot_matrices - repeat what dm_scale_contact_matrix does but for bootstrapped matrices
+* an_figure_one - Figure for paper
+* an_figure_two - Figure of contact matrices for different locations
+* an_descriptive_stats_tables -  descriptive stats that go into tables in the analysis.
+* an_table_two - Table overview of the characterstics of participants and contacts
+* an_eigenvalues - Create data and look at change in R based on the eigenvalue scalings. 
 
 
  
