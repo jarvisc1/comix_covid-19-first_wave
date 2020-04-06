@@ -1,4 +1,6 @@
-# Contact survey during COVID-19
+# Contact survey during COVID-19 
+[![DOI](https://zenodo.org/badge/253430563.svg)](https://zenodo.org/badge/latestdoi/253430563)
+
 Analyses of the first wave of data from the CoMix social contact survey conducted in the UK during COVID-19 outbreak
 
 
