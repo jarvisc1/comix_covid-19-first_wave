@@ -39,7 +39,6 @@ cm_filter <- function(
     filter_text$cnt_other_house <- other_house
     filter_text$cnt_work <- work
     filter_text$cnt_school <- school
-    filter_text$cnt_home <- home
     filter_text$cnt_gender <- gender
     filter_text$hhm_quarantine <- hhm_quarantine
     filter_text$hhm_isolate <- hhm_isolate
