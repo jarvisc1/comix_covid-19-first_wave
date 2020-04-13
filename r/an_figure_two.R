@@ -91,6 +91,6 @@ x1 <- gg_matrix(cm_dt ,
 x1
 
 
-ggsave(filename = "outputs/figure2.png", x1, width = 8, height = 8)
+ggsave(filename = "outputs/figure2.png", x1, width = 8, height = 8, dpi = 1000)
 
 

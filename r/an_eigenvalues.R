@@ -19,7 +19,7 @@ eigen_df <- data.table(type, eigens)
 
 
 
-previousR <- rnorm(nrow(eigen_df), mean = 2.68, sd = 0.57)
+previousR <- rnorm(nrow(eigen_df), mean = 2.6, sd = 0.54)
 
 eigen_df <- data.table(type, eigens, previousR, newR = eigens*previousR)
 

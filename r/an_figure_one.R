@@ -79,4 +79,4 @@ r_plot
 x1 <- (matrix_plot / r_plot )
 x1
 
-ggsave(filename = "outputs/figure1.png", x1, width = 6, height = 6.5)
+ggsave(filename = "outputs/figure1.png", x1, width = 6, height = 6.5, dpi = 1000)
