@@ -2,6 +2,8 @@ library(socialmixr)
 library(data.table)
 library(ggplot2)
 
+boots <- 10000
+
 eigen_all <- readRDS('data/contact_matrices/eigen_all.rds')
 eigen_phys <- readRDS('data/contact_matrices/eigen_physical.rds')
 eigen_all_scaled <- readRDS('data/contact_matrices/eigen_all_polymod_scaled.rds')
@@ -17,7 +19,7 @@ eigen_df <- data.table(type, eigens)
 
 
 
-previousR <- rnorm(nrow(eigen_df), mean = 2.6, sd = 0.54)
+previousR <- rnorm(nrow(eigen_df), mean = 2.68, sd = 0.57)
 
 eigen_df <- data.table(type, eigens, previousR, newR = eigens*previousR)
 

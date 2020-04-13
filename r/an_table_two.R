@@ -14,7 +14,7 @@ part[, hh_size := fcase(
   hh_size == 2, "2",
   hh_size == 3, "3",
   hh_size == 4, "4",
-  hh_size > 4, "6+"
+  hh_size > 4, "4+"
 )]
 
 ## Participant chracteristics
@@ -53,14 +53,7 @@ t_counts <- rbind(
 
 ## Number of contacts per group.
 
-contacts <- readRDS('data/clean_contacts.rds')
-
-## Combine the contacts with the participants data
-part_contacts <- merge(contacts, part, by = c("part_id", "wave"), all = T)
-# Calculate the mean number of contacts per person
-mean_contacts <- part_contacts[,  .(mean_contacts = mean(.N)), by = part_id]
-# Merge on just the mean contacts
-part <- merge(part, mean_contacts, by = "part_id")
+part[, mean_contacts := n_contacts]
 
 ## Calculate the mean and standard devation by the groupings
 
